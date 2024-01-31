@@ -36,7 +36,7 @@ function App() {
             fahrenheit: ((res.data.main.temp - 273.15) * (9/5) + 32).toFixed(1),
           }
           setTemp(obj);
-          setHasError(true);
+          setHasError(false);
           setWeather(res.data)
         })
         .catch(err => {
